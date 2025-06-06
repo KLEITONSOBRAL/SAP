@@ -2,12 +2,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background-color: #FFFFFF; /* fundo branco */
+  color: #000000; /* texto preto */
 }
 
 header {
-  background-color: #5c6bc0;
-  color: white;
+  background-color: #008000; /* verde */
+  color: #FFFFFF;
   padding: 1rem;
   text-align: center;
 }
@@ -28,6 +29,18 @@ form input, form select, form button {
   padding: 0.5rem;
   width: 100%;
   max-width: 400px;
+  font-family: Arial, sans-serif;
+}
+
+form button {
+  background-color: #008000;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #006400;
 }
 
 ul {
@@ -36,12 +49,16 @@ ul {
 }
 
 li {
-  background: #fff;
+  background: #FFFFFF;
   padding: 0.5rem;
   margin: 0.5rem 0;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
+  color: #000000;
+  font-family: Arial, sans-serif;
 }
 
-#user-message {
+#user-message, #book-message {
   margin-top: 10px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
 }
