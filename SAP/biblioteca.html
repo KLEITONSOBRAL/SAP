@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minha Biblioteca Pessoal</title>
+  <link rel="stylesheet" href="biblioteca.css" />
+</head>
+<body>
+  <header>
+    <h1>Minha Biblioteca Pessoal</h1>
+  </header>
+
+  <main>
+    <section id="user-form">
+      <h2>Cadastrar Usuário</h2>
+      <form id="form-user">
+        <input type="text" id="user-name" placeholder="Nome" required />
+        <input type="email" id="user-email" placeholder="E-mail" required />
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+
+    <section id="book-form" style="display: none;">
+      <h2>Cadastrar Livro</h2>
+      <form id="form-book">
+        <input type="text" id="book-title" placeholder="Título" required />
+        <input type="text" id="book-author" placeholder="Autor" required />
+        <input type="text" id="book-genre" placeholder="Gênero" required />
+        <select id="book-status">
+          <option value="quero ler" selected>Quero Ler</option>
+          <option value="lendo">Lendo</option>
+          <option value="lido">Lido</option>
+        </select>
+        <button type="submit">Cadastrar Livro</button>
+      </form>
+    </section>
+
+    <section id="book-list" style="display: none;">
+      <h2>Meus Livros</h2>
+      <div id="books-quero-ler">
+        <h3>Quero Ler</h3>
+        <ul></ul>
+      </div>
+      <div id="books-lendo">
+        <h3>Lendo</h3>
+        <ul></ul>
+      </div>
+      <div id="books-lido">
+        <h3>Lido</h3>
+        <ul></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="biblioteca.js"></script>
+</body>
+</html>
